@@ -260,6 +260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49eabc7c34fc31c459aef5a8af45eabc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  block: {fileID: 6761528076814973606, guid: 8cd869926f5e80b4999cdbc843d86d12, type: 3}
+  worldSize: 2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
