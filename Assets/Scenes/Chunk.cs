@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Chunk : MonoBehaviour
 {
+
     public Material cubeMaterial;
     public Block[,,] chunkData;
 
@@ -17,11 +18,11 @@ public class Chunk : MonoBehaviour
                 for (int x = 0; x < sizeX; x++)
                 {
                     Vector3 pos = new Vector3(x, y, z);
-                    Block b = new Block(Block.BlockType.DIRT, pos,
+                    chunkData[x, y, z] = new Block(Block.BlockType.DIRT, pos,
                                         this.gameObject, cubeMaterial);
                 }
 
-        //draws each block
+        //draw blocks
         for (int z = 0; z < sizeZ; z++)
             for (int y = 0; y < sizeY; y++)
                 for (int x = 0; x < sizeX; x++)
